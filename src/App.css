@@ -1,0 +1,119 @@
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #6D7F9B, #4D649C); /* Soft gradient */
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+/* Main container */
+main {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2); /* Softer, deeper shadow */
+  padding: 30px 25px;
+  text-align: center;
+  width: 100%;
+  max-width: 450px;
+  min-height: 300px;
+  backdrop-filter: blur(5px); /* Subtle blur for a glass effect */
+}
+
+/* Search bar container */
+.search-bar-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Search bar input */
+.search-bar input {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 18px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  text-align: center;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search-bar input::placeholder {
+  color: #e0e0e0;
+}
+
+.search-bar input:focus {
+  border-color: #7e9eaf;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 10px rgba(126, 158, 175, 0.7);
+}
+
+/* Location box */
+.location-box {
+  margin-bottom: 20px;
+}
+
+.location-box .location {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.location-box .date {
+  font-size: 16px;
+  color: #b0bec5;
+  margin-top: 5px;
+}
+
+/* Weather box */
+.weather-box .temp {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 15px 0;
+  color: #ffffff;
+}
+
+.weather-box .weather {
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #b0bec5;
+}
+
+/* Error Message */
+.error {
+  color: #ff6b6b;
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .search-bar input {
+    padding: 12px 15px;
+    font-size: 16px;
+  }
+
+  .location-box .location {
+    font-size: 24px;
+  }
+
+  .weather-box .temp {
+    font-size: 50px;
+  }
+}
+
+/* Subtle transitions */
+input, .temp, .location, .weather {
+  transition: all 0.3s ease-in-out;
+}
